@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 Apr, 2016 3:29:45 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="pojo.Apartment" table="apartment" catalog="erpdb">
+        <id name="aid" type="java.lang.Integer">
+            <column name="aid" />
+            <generator class="identity" />
+        </id>
+        
+        
+        <property name="aname" type="string">
+            <column name="aname" length="20" not-null="true" />
+        </property>
+        <property name="acost" type="integer">
+            <column name="acost" length="20" not-null="true" />
+        </property>
+        
+        <property name="atype" type="string">
+            <column name="atype" length="20" not-null="true" />
+        </property>
+        
+        <property name="adesc" type="string">
+            <column name="adesc" length="100" not-null="true" />
+        </property>
+        
+        <property name="address" type="string">
+            <column name="address" length="100" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
